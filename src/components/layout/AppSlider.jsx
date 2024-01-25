@@ -31,7 +31,7 @@ export default function AppSlider() {
                         ]}
                         renderItem={(item) => (
                             <List.Item>
-                                <sapn>{item.title}</sapn>
+                                <span>{item.title}</span>
                                 <span>
                                     {item.withTag && <Tag color={asset.grow ? 'green' : 'red'}>{asset.growPercent}%</Tag>}
                                     {item.isPlain && item.value.toFixed(2)}
