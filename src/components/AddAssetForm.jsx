@@ -39,7 +39,7 @@ export default function AddAssetForm({onClose}) {
         return (
             <Select
                 style={{ width: '100%' }}
-                onSelect = {(v) => setCoin(crypto.find((c) => c.id == v))}
+                onSelect = {(v) => setCoin(crypto.find((c) => c.id === v))}
                 placeholder="Select coin"
                 options={crypto.map(coin => ({
                     label: coin.name,

@@ -10,7 +10,7 @@ const CryptoContext = createContext({
 
 function mapAssets(assets, result) {
     return assets.map((asset) => {
-        const coin = result.find(c => c.id = asset.id)
+        const coin = result.find(c => c.id === asset.id)
         return {
             grow: asset.price < coin.price,
             growPercent: percentDifference(asset.price, coin.price),
